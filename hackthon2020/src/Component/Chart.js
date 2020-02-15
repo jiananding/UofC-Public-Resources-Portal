@@ -39,7 +39,7 @@ const data = [
   createData("20:00", 1000),
   createData("21:00", 750),
   createData("22:00", 580),
-  createData("23:00", 400),
+  createData("23:00", 400)
 ];
 
 export default function Chart() {
@@ -65,7 +65,7 @@ export default function Chart() {
               position="left"
               style={{ textAnchor: "middle", fill: theme.palette.text.primary }}
             >
-            People
+              People
             </Label>
           </YAxis>
           <Line

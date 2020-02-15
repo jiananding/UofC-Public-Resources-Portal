@@ -4,66 +4,63 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import DashboardIcon from "@material-ui/icons/Dashboard";
 import PeopleIcon from "@material-ui/icons/People";
-import BarChartIcon from "@material-ui/icons/BarChart";
-import LayersIcon from "@material-ui/icons/Layers";
-import Local_Library from "@material-ui/icons/LocalLibrary";
+import FastFood from "@material-ui/icons/Fastfood";
+import Sport_BasketBall from "@material-ui/icons/SportsBasketball";
+import Local_Parking from "@material-ui/icons/LocalParking";
+import {Redirect} from "react-router-dom"
+
+const toDashboard = () => {
+  window.location.href = "./dashboard";
+};
+
+const toStudy = () => {
+  window.location.href = "./study";
+};
+
+const toLiving = () => {
+  window.location.href = "./living";
+};
+
+const toExercise = () => {
+  window.location.href = "./exercising";
+};
+
+const toParking = () => {
+  window.location.href = "./parking";
+};
 
 export const mainListItems = (
-  <div>
-    <ListItem button>
-      <ListItemIcon>
-        <DashboardIcon />
-      </ListItemIcon>
-      <ListItemText primary="Dashboard" />
-    </ListItem>
-    <ListItem button>
-      <ListItemIcon>
-        <ShoppingCartIcon />
-      </ListItemIcon>
-      <ListItemText primary="Orders" />
-    </ListItem>
-    <ListItem button>
-      <ListItemIcon>
-        <PeopleIcon />
-      </ListItemIcon>
-      <ListItemText primary="Customers" />
-    </ListItem>
-    <ListItem button>
-      <ListItemIcon>
-        <BarChartIcon />
-      </ListItemIcon>
-      <ListItemText primary="Reports" />
-    </ListItem>
-    <ListItem button>
-      <ListItemIcon>
-      <Local_Library></Local_Library>  {/*Add an icon like this*/}
-      </ListItemIcon>
-      <ListItemText primary="Library" />
-    </ListItem>
-  </div>
-);
+         <div>
+           <ListItem button onClick={() => toDashboard()}>
+             <ListItemIcon>
+               <DashboardIcon />
+             </ListItemIcon>
+             <ListItemText primary="Dashboard" />
+           </ListItem>
+           <ListItem button onClick={() => toStudy()}>
+             <ListItemIcon>
+               <PeopleIcon />
+             </ListItemIcon>
+             <ListItemText primary="Study" />
+           </ListItem>
+           <ListItem button onClick={() => toLiving()}>
+             <ListItemIcon>
+               <FastFood />
+             </ListItemIcon>
+             <ListItemText primary="Living" />
+           </ListItem>
+           <ListItem button onClick={() => toExercise()}>
+             <ListItemIcon>
+               <Sport_BasketBall />
+             </ListItemIcon>
+             <ListItemText primary="Exercise" />
+           </ListItem>
+           <ListItem button onClick={() => toParking()}>
+             <ListItemIcon>
+               <Local_Parking />
+             </ListItemIcon>
+             <ListItemText primary="Parking" />
+           </ListItem>
+         </div>
+       );
 
-/*
-export const secondaryListItems = (
-  <div>
-    <ListSubheader inset>Saved reports</ListSubheader>
-    <ListItem button>
-      <ListItemIcon>
-        <AssignmentIcon />
-      </ListItemIcon>
-      <ListItemText primary="Current month" />
-    </ListItem>
-    <ListItem button>
-      <ListItemIcon>
-        <AssignmentIcon />
-      </ListItemIcon>
-      <ListItemText primary="Last quarter" />
-    </ListItem>
-    <ListItem button>
-      <ListItemIcon>
-        <AssignmentIcon />
-      </ListItemIcon>
-      <ListItemText primary="Year-end sale" />
-    </ListItem>
-  </div>
-);*/

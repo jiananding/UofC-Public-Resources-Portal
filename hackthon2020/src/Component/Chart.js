@@ -16,15 +16,30 @@ function createData(time, amount) {
 }
 
 const data = [
-  createData("00:00", 0),
-  createData("03:00", 300),
-  createData("06:00", 600),
-  createData("09:00", 800),
-  createData("12:00", 1500),
-  createData("15:00", 2000),
-  createData("18:00", 2400),
-  createData("21:00", 2400),
-  createData("24:00", undefined)
+  createData("00:00", 280),
+  createData("01:00", 150),
+  createData("02:00", 80),
+  createData("03:00", 40),
+  createData("04:00", 10),
+  createData("05:00", 0),
+  createData("06:00", 0),
+  createData("07:00", 20),
+  createData("08:00", 80),
+  createData("09:00", 120),
+  createData("10:00", 200),
+  createData("11:00", 290),
+  createData("12:00", 350),
+  createData("13:00", 450),
+  createData("14:00", 600),
+  createData("15:00", 700),
+  createData("16:00", 1000),
+  createData("17:00", 950),
+  createData("18:00", 900),
+  createData("19:00", 1200),
+  createData("20:00", 1000),
+  createData("21:00", 750),
+  createData("22:00", 580),
+  createData("23:00", 400),
 ];
 
 export default function Chart() {
@@ -32,7 +47,7 @@ export default function Chart() {
 
   return (
     <React.Fragment>
-      <Title>Today</Title>
+      <Title>Taylor Family Digital Library</Title>
       <ResponsiveContainer>
         <LineChart
           data={data}
@@ -40,7 +55,7 @@ export default function Chart() {
             top: 16,
             right: 16,
             bottom: 0,
-            left: 24
+            left: 26
           }}
         >
           <XAxis dataKey="time" stroke={theme.palette.text.secondary} />
@@ -50,7 +65,7 @@ export default function Chart() {
               position="left"
               style={{ textAnchor: "middle", fill: theme.palette.text.primary }}
             >
-              Sales ($)
+            People
             </Label>
           </YAxis>
           <Line

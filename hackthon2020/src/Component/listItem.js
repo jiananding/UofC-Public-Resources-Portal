@@ -8,7 +8,7 @@ import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import PeopleIcon from "@material-ui/icons/People";
 import BarChartIcon from "@material-ui/icons/BarChart";
 import LayersIcon from "@material-ui/icons/Layers";
-import AssignmentIcon from "@material-ui/icons/Assignment";
+import Local_Library from "@material-ui/icons/LocalLibrary";
 
 export const mainListItems = (
   <div>
@@ -38,13 +38,14 @@ export const mainListItems = (
     </ListItem>
     <ListItem button>
       <ListItemIcon>
-        <LayersIcon />
+      <Local_Library></Local_Library>  {/*Add an icon like this*/}
       </ListItemIcon>
-      <ListItemText primary="Integrations" />
+      <ListItemText primary="Library" />
     </ListItem>
   </div>
 );
 
+/*
 export const secondaryListItems = (
   <div>
     <ListSubheader inset>Saved reports</ListSubheader>
@@ -67,4 +68,4 @@ export const secondaryListItems = (
       <ListItemText primary="Year-end sale" />
     </ListItem>
   </div>
-);
+);*/

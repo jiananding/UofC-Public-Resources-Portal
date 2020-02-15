@@ -155,7 +155,7 @@ function Parkade() {
         OPEN
       </Typography>
       <Typography component="p" variant="h7">
-        Available Carslot :
+        Available Carslots :
       </Typography>
       <Typography component="p" variant="h4">
         112
@@ -239,7 +239,7 @@ function BasketballGym() {
         OPEN
       </Typography>
       <Typography component="p" variant="h7">
-        Available Basketball Court:
+        Available Basketball Courts :
       </Typography>
       <Typography component="p" variant="h4">
         2

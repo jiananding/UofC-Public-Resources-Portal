@@ -21,6 +21,7 @@ import NotificationsIcon from "@material-ui/icons/Notifications";
 import { mainListItems, secondaryListItems } from "./Component/listItem"
 import './pageExercising.css';
 import Title from "./Component/Title";
+import Chart from "./Component/Chart";
 
 
 function Copyright() {
@@ -232,6 +233,12 @@ export default function Dashboard() {
               <div class="event stage-venus start-1930 end-2130 length-2">Speaker Thirteen <span>Venus Stage</span></div>
               <div class="event stage-saturn start-1930 end-2130 length-2">Drinks <span>Saturn Stage</span></div>
             </div>
+            {/* Chart */}
+            <Grid item xs={12} md={12} lg={12}>
+              <Paper className={fixedHeightPaper}>
+                <Chart />
+              </Paper>
+            </Grid>
           </Grid>
           <Box pt={4}>
             <Copyright />

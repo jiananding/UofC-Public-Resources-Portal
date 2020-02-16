@@ -16,14 +16,14 @@ function createData(id, time_period, event, status) {
 const rows = [
   createData(
     0,
-    "16 Mar, 2019",
-    "Elvis Presley",
-    "Tupelo, MS",
+    "16 Feb, 2020",
+    "Haskathon",
+    "Calgary, CA",
   ),
   createData(
     1,
-    "16 Mar, 2019",
-    "Paul McCartney",
+    "22 Feb, 2020",
+    "",
     "London, UK",
   ),
   createData(
@@ -60,7 +60,7 @@ export default function Orders() {
   const classes = useStyles();
   return (
     <React.Fragment>
-      <Title>Recent Orders</Title>
+      <Title>Upcoming event</Title>
       <Table size="small">
         <TableHead>
           <TableRow>

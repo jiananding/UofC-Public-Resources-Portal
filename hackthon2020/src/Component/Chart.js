@@ -70,12 +70,12 @@ const data2 = [
 ];
 
 
- function Study() {
+ function Red() {
   const theme = useTheme();
 
   return (
     <React.Fragment>
-      <Title>Library</Title>
+      <Title>Red Gym</Title>
       <ResponsiveContainer>
         <LineChart
           data={data1}
@@ -184,45 +184,7 @@ function Living() {
   );
 }
 
-function Park() {
-  const theme = useTheme();
-
-  return (
-    <React.Fragment>
-      <Title>Parking</Title>
-      <ResponsiveContainer>
-        <LineChart
-          data={data1}
-          margin={{
-            top: 16,
-            right: 16,
-            bottom: 0,
-            left: 26
-          }}
-        >
-          <XAxis dataKey="time" stroke={theme.palette.text.secondary} />
-          <YAxis stroke={theme.palette.text.secondary}>
-            <Label
-              angle={270}
-              position="left"
-              style={{ textAnchor: "middle", fill: theme.palette.text.primary }}
-            >
-              People
-            </Label>
-          </YAxis>
-          <Line
-            type="monotone"
-            dataKey="amount"
-            stroke={theme.palette.primary.main}
-            dot={false}
-          />
-        </LineChart>
-      </ResponsiveContainer>
-    </React.Fragment>
-  );
-}
-
-export default Park;
-export {Park, Study, Living, Exercise};
+export default Exercise;
+export {Red, Living, Exercise};
 
 //import {Park, Study, Living, Exercise} from "./Component/Chart";

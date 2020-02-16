@@ -35,7 +35,11 @@ function BusinessLibrary() {
       <Typography component="p" variant="h6" color="#F44336">
         Flow Rate: Low {/*Should be light green here! */}
       </Typography>
-      
+
+      <Typography>
+        <img src="./grey.png" style={{ height: 25, width: 25 }} />
+      </Typography>
+
       <Typography color="textSecondary" className={classes.depositContext}>
       </Typography>
     </React.Fragment>
@@ -83,7 +87,12 @@ function HealthSciencesLibrary() {
       <Typography component="p" variant="h6" color="#F44336">
         Flow Rate: Middle {/*Should be green here! */}
       </Typography>
-      
+        <Typography>
+        <img
+          src="./orange.jpg"
+          style={{ height: 25, width: 25 }}
+        />
+      </Typography>
       <Typography color="textSecondary" className={classes.depositContext}>
       </Typography>
     </React.Fragment>
@@ -109,6 +118,12 @@ function DoucetteLibrary() {
       </Typography>
       <Typography component="p" variant="h6" color="#F44336">
         Flow Rate: Middle {/*Should be green here! */}
+      </Typography>
+      <Typography>
+        <img
+          src="./green.png"
+          style={{ height: 25, width: 25 }}
+        />
       </Typography>
       <Typography color="textSecondary" className={classes.depositContext}>
       </Typography>
@@ -136,6 +151,12 @@ function GallagherLibrary() {
       <Typography component="p" variant="h6" color="#F44336">
         Flow Rate: Middle {/*Should be green here! */}
       </Typography>
+      <Typography>
+        <img
+          src="./orange.jpg"
+          style={{ height: 25, width: 25 }}
+        />
+      </Typography>
       <Typography color="textSecondary" className={classes.depositContext}>
       </Typography>
     </React.Fragment>
@@ -161,6 +182,12 @@ function BennettJonesLawLibrary() {
       </Typography>
       <Typography component="p" variant="h6" color="#F44336">
         Flow Rate: Low {/*Should be green here! */}
+      </Typography>
+      <Typography>
+        <img
+          src="./green.png"
+          style={{ height: 25, width: 25 }}
+        />
       </Typography>
       <Typography color="textSecondary" className={classes.depositContext}>
       </Typography>
@@ -190,7 +217,12 @@ function TaylorFamilyDigitalLibrary() {
       <Typography component="p" variant="h6" color="#F44336">
         Flow Rate: High {/*Should be red here! */}
       </Typography>
-      
+      <Typography>
+        <img
+          src="./red.png"
+          style={{ height: 25, width: 25 }}
+        />
+      </Typography>
       <Typography color="textSecondary" className={classes.depositContext}>
       </Typography>
     </React.Fragment>
@@ -228,7 +260,12 @@ function DiningCenter() {
       <Typography component="p" variant="h6" color="#F44336">
         Flow Rate: Middle {/*Should be red here! */}
       </Typography>
-      
+      <Typography>
+        <img
+          src="./orange.jpg"
+          style={{ height: 25, width: 25 }}
+        />
+      </Typography>
       <Typography color="textSecondary" className={classes.depositContext}>
       </Typography>
     </React.Fragment>
@@ -275,6 +312,12 @@ function MachallParkade() {
       </Typography>
       <Typography color="textSecondary" className={classes.depositContext}>
       </Typography>
+      <Typography>
+        <img
+          src="./green.png"
+          style={{ height: 25, width: 25 }}
+        />
+      </Typography>
       <div>
         <Link color="primary" href="#" onClick={preventDefault}>
           Check details
@@ -302,6 +345,12 @@ function ArtParkade() {
         112
       </Typography>
       <Typography color="textSecondary" className={classes.depositContext}>
+      </Typography>
+      <Typography>
+        <img
+          src="./green.png"
+          style={{ height: 25, width: 25 }}
+        />
       </Typography>
       <div>
         <Link color="primary" href="#" onClick={preventDefault}>
@@ -331,6 +380,12 @@ function Lot11() {
       </Typography>
       <Typography color="textSecondary" className={classes.depositContext}>
       </Typography>
+      <Typography>
+        <img
+          src="./orange.jpg"
+          style={{ height: 25, width: 25 }}
+        />
+      </Typography>
       <div>
         <Link color="primary" href="#" onClick={preventDefault}>
           Check details
@@ -359,6 +414,12 @@ function Lot10() {
       </Typography>
       <Typography color="textSecondary" className={classes.depositContext}>
       </Typography>
+      <Typography>
+        <img
+          src="./orange.jpg"
+          style={{ height: 25, width: 25 }}
+        />
+      </Typography>
       <div>
         <Link color="primary" href="#" onClick={preventDefault}>
           Check details
@@ -386,6 +447,12 @@ function SwimmingPool() {
         37
       </Typography>
       <Typography color="textSecondary" className={classes.depositContext}>
+      </Typography>
+      <Typography>
+        <img
+          src="./orange.jpg"
+          style={{ height: 25, width: 25 }}
+        />
       </Typography>
       <div>
         <Link color="primary" href="/swimming_pool">
@@ -443,6 +510,12 @@ function RedGym() {
       </Typography>
       <Typography color="textSecondary" className={classes.depositContext}>
       </Typography>
+      <Typography>
+        <img
+          src="./green.png"
+          style={{ height: 25, width: 25 }}
+        />
+      </Typography>
       <div>
         <Link color="primary" href="/red_gym">
           Check details
@@ -471,6 +544,12 @@ function GoldGym() {
       </Typography>
       <Typography color="textSecondary" className={classes.depositContext}>
       </Typography>
+      <Typography>
+        <img
+          src="./red.png"
+          style={{ height: 25, width: 25 }}
+        />
+      </Typography>
       <div>
         <Link color="primary" href="/gold_gym">
           Check details
@@ -498,6 +577,12 @@ function JackSimpsonGym() {
         4
       </Typography>
       <Typography color="textSecondary" className={classes.depositContext}>
+      </Typography>
+      <Typography>
+        <img
+          src="./orange.jpg"
+          style={{ height: 25, width: 25 }}
+        />
       </Typography>
       <div>
         <Link color="primary" href="/jack_simpson_gym">

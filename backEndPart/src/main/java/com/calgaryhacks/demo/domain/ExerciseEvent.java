@@ -15,7 +15,7 @@ public class ExerciseEvent {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private long Id;
 
     private long buildingId;
 
@@ -26,11 +26,11 @@ public class ExerciseEvent {
     private String description;
 
     public long getId() {
-        return id;
+        return Id;
     }
 
-    public void setId(long id) {
-        this.id = id;
+    public void setId(long Id) {
+        this.Id = Id;
     }
 
     public long getBuildingId() {

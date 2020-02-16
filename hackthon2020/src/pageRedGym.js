@@ -23,19 +23,6 @@ import {RedGym} from "./Component/Schedule";
 import Title from "./Component/Title";
 import {Red, Living, Exercise} from "./Component/Chart";
 
-function Copyright() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {"Copyright © "}
-      <Link color="inherit" href="https://material-ui.com/">
-        Your Website
-      </Link>{" "}
-      {new Date().getFullYear()}
-      {"."}
-    </Typography>
-  );
-}
-
 const drawerWidth = 240;
 
 const useStyles = makeStyles(theme => ({
@@ -197,10 +184,6 @@ export default function Dashboard() {
               <Red/>
             </Paper>
           </Grid>
-          </Box>
-        
-          <Box pt={4}>
-            <Copyright />
           </Box>
         </Container>
       </main>

@@ -24,20 +24,6 @@ import {RedGym, GoldGym, DoucetteLibrary, GallagherLibrary, BusinessLibrary, Hea
 import Title from "./Component/Title";
 import {Park, Study, Living, Exercise} from "./Component/Chart";
 
-
-function Copyright() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {"Copyright © "}
-      <Link color="inherit" href="https://material-ui.com/">
-        Your Website
-      </Link>{" "}
-      {new Date().getFullYear()}
-      {"."}
-    </Typography>
-  );
-}
-
 const drawerWidth = 240;
 
 const useStyles = makeStyles(theme => ({
@@ -186,7 +172,9 @@ export default function Dashboard() {
         <div className={classes.appBarSpacer} />
         <Container maxWidth="lg" className={classes.container}>
           <Grid container spacing={3}>
-          <Title>Gold Gym</Title>
+          <Box pr={4} pl={2}>
+            <Title>Gold Gym</Title>
+          </Box>
             <Schedule/>
           </Grid>
 
@@ -198,10 +186,6 @@ export default function Dashboard() {
               </Paper>
             </Grid>
             </Box>
-
-          <Box pt={4}>
-            <Copyright />
-          </Box>
         </Container>
       </main>
     </div>

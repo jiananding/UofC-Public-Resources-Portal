@@ -18,7 +18,7 @@ public class LivingEventService {
         int            howMany = rand.nextInt(11);
         for(int i=0; i<howMany; i++) {
             LivingEvent event = new LivingEvent();
-            event.setBuildingId(rand.nextInt(3));
+            event.setBuildingId(rand.nextInt(1));
             event.setStartTime(new Date());
             event.setEndTime(new Date());
             event.setEventName("Event "+ i);

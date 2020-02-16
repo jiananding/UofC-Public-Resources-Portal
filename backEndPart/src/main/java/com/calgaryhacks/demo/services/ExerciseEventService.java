@@ -20,7 +20,7 @@ public class ExerciseEventService {
 
         for(int i=0; i<howMany; i++){
             ExerciseEvent event = new ExerciseEvent();
-            event.setBuildingId(rand.nextInt(3));
+            event.setBuildingId(rand.nextInt(4));
 
             event.setStartTime(new Date());
             event.setEndTime(new Date());

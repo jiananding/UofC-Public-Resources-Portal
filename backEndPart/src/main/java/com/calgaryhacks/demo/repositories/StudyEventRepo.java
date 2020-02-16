@@ -8,6 +8,8 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface StudyEventRepo extends CrudRepository<StudyEvent, Long> {
 
+    StudyEvent findById(long id);
+
     @Override
     Iterable<StudyEvent> findAll();
 }

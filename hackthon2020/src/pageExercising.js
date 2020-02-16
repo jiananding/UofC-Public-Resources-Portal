@@ -19,9 +19,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import { mainListItems, secondaryListItems } from "./Component/listItem"
-import Title from "./Component/Title";
-import Chart from "./Component/Chart";
-import Schedule from "./Component/Schedule";
+// import Schedule from "./Component/Schedule";
 import Deposits, {BusinessLibrary, HealthSciencesLibrary, TaylorFamilyDigitalLibrary, DiningCenter, Parkade, Lot10, SwimmingPool, BasketballGym} from "./Component/Deposits";
 
 
@@ -186,19 +184,30 @@ export default function Dashboard() {
         <div className={classes.appBarSpacer} />
         <Container maxWidth="lg" className={classes.container}>
           <Grid container spacing={3}>
-            <Title>Red Gym</Title>
-            <Schedule/>
-            <Grid item xs={12} md={12} lg={12}>
-              <Paper className={fixedHeightPaper}>
-                <Chart />
-              </Paper>
+          <Grid item xs={12} md={12} lg={3}>
+                <Paper className={fixedHeightPaper}>
+                  <BasketballGym/>
+                </Paper>
+            </Grid>
+
+          <Grid item xs={12} md={12} lg={3}>
+                <Paper className={fixedHeightPaper}>
+                  <BasketballGym/>
+                </Paper>
+            </Grid>
+
+            <Grid item xs={12} md={12} lg={3}>
+                <Paper className={fixedHeightPaper}>
+                  <BasketballGym/>
+                </Paper>
+            </Grid>
+
+            <Grid item xs={12} md={12} lg={3}>
+                <Paper className={fixedHeightPaper}>
+                  <SwimmingPool/>
+                </Paper>
             </Grid>
           </Grid>
-          <Grid item xs={12} md={4} lg={3}>
-              <Paper className={fixedHeightPaper}>
-                <BusinessLibrary/>
-              </Paper>
-            </Grid> 
           <Box pt={4}>
             <Copyright />
           </Box>

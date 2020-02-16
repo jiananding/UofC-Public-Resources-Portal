@@ -202,12 +202,6 @@ export default function Dashboard() {
 
             <Grid item xs={12} md={12} lg={3}>
                 <Paper className={fixedHeightPaper}>
-                  <BasketballGym/>
-                </Paper>
-            </Grid>
-
-            <Grid item xs={12} md={12} lg={3}>
-                <Paper className={fixedHeightPaper}>
                   <SwimmingPool/>
                 </Paper>
             </Grid>

@@ -1,10 +1,12 @@
 package com.calgaryhacks.demo.domain;
 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.util.Date;
 
+@Entity
 public class StudyEvent {
 
     public StudyEvent(){
@@ -13,7 +15,7 @@ public class StudyEvent {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private long Id;
 
     private long buildingId;
 
@@ -24,11 +26,11 @@ public class StudyEvent {
     private String description;
 
     public long getId() {
-        return id;
+        return Id;
     }
 
-    public void setId(long id) {
-        this.id = id;
+    public void setId(long Id) {
+        this.Id = Id;
     }
 
     public long getBuildingId() {

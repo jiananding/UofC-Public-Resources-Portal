@@ -16,13 +16,11 @@ public class LivingEventService {
     public void createFakeData() {
         Random rand    = new Random();
         int            howMany = rand.nextInt(11);
-        for(int i=0; i<howMany; i++){
+        for(int i=0; i<howMany; i++) {
             LivingEvent event = new LivingEvent();
             event.setBuildingId(rand.nextInt(3));
-
             event.setStartTime(new Date());
             event.setEndTime(new Date());
-
             event.setEventName("Event "+ i);
             event.setDescription("Event description");
         }

@@ -19,7 +19,7 @@ function BusinessLibrary() {
   const classes = useStyles();
   return (
     <React.Fragment>
-      <Title>Health Sciences Library</Title>
+      <Title>Business Library</Title>
       <Typography component="p" variant="h7">
         Current Status:
       </Typography>
@@ -255,4 +255,5 @@ function BasketballGym() {
   );
 }
 
-export default {BusinessLibrary, HealthSciencesLibrary, TaylorFamilyDigitalLibrary, DiningCenter, Parkade, Lot10, SwimmingPool, BasketballGym};
+export default BusinessLibrary;
+export {BusinessLibrary, HealthSciencesLibrary, TaylorFamilyDigitalLibrary, DiningCenter, Parkade, Lot10, SwimmingPool, BasketballGym};

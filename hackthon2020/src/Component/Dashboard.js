@@ -20,7 +20,7 @@ import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import { mainListItems, secondaryListItems } from "./listItem"
 import Chart from "./Chart";
-import Deposits from "./Deposits";
+import Deposits, {BusinessLibrary, HealthSciencesLibrary, TaylorFamilyDigitalLibrary, DiningCenter, Parkade, Lot10, SwimmingPool, BasketballGym} from "./Deposits";
 import Orders from "./Orders";
 
 function Copyright() {
@@ -194,7 +194,7 @@ export default function Dashboard() {
             {/* Recent Deposits */}
             <Grid item xs={12} md={4} lg={3}>
               <Paper className={fixedHeightPaper}>
-                <Deposits />
+                <HealthSciencesLibrary />
               </Paper>
             </Grid>
             {/* Recent Orders */}

@@ -7,7 +7,6 @@ import pageExercising from './pageExercising';
 import pageStudy from './pageStudy';
 
 
-
 function App() {
   return (
     <Router>
@@ -16,6 +15,7 @@ function App() {
         <Route exact={true} path="/study" component={pageStudy} />
         <Route exact={true} path="/living" component={pageLiving} />
         <Route exact={true} path="/exercising" component={pageExercising} />
+
         <Route exact path="/" component={Dashboard} />
       </div>
     </Router>

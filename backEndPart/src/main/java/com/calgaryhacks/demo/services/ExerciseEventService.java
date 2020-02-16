@@ -14,7 +14,7 @@ public class ExerciseEventService {
     @Autowired
     private ExerciseEventRepo exerciseEventRepo;
 
-    public void createFakeData(){
+    public void createFakeData() {
         Random rand = new Random();
         int howMany = rand.nextInt(11);
 

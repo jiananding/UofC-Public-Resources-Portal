@@ -7,6 +7,9 @@ import pageExercising from './pageExercising';
 import pageStudy from './pageStudy';
 import pageParking from './pageParking';
 import pageRedGym from './pageRedGym';
+import pageGoldGym from './pageGoldGym';
+import pageJackSimpsonGym from './pageJackSimpsonGym';
+import pageSwimmingPool from './pageSwimmingPool';
 
 
 
@@ -19,6 +22,9 @@ function App() {
         <Route exact={true} path="/living" component={pageLiving} />
         <Route exact={true} path="/exercising" component={pageExercising} />
         <Route exact={true} path="/red_gym" component={pageRedGym} />
+        <Route exact={true} path="/gold_gym" component={pageGoldGym} />
+        <Route exact={true} path="/jack_simpson_gym" component={pageJackSimpsonGym} />
+        <Route exact={true} path="/swimming_pool" component={pageSwimmingPool} />
         <Route exact path="/" component={Dashboard} />
       </div>
     </Router>

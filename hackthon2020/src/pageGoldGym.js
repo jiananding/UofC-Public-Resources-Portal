@@ -19,7 +19,8 @@ import MenuIcon from "@material-ui/icons/Menu";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import { mainListItems, secondaryListItems } from "./Component/listItem"
-import {RedGym} from "./Component/Schedule";
+import Schedule from "./Component/Schedule";
+import {RedGym, GoldGym, DoucetteLibrary, GallagherLibrary, BusinessLibrary, HealthSciencesLibrary, TaylorFamilyDigitalLibrary, DiningCenter, Parkade, Lot10, SwimmingPool, BasketballGym} from "./Component/Deposits";
 import Title from "./Component/Title";
 
 function Copyright() {
@@ -183,8 +184,8 @@ export default function Dashboard() {
         <div className={classes.appBarSpacer} />
         <Container maxWidth="lg" className={classes.container}>
           <Grid container spacing={3}>
-          <Title>Red Gym</Title>
-            <RedGym/>
+          <Title>Gold Gym</Title>
+            <Schedule/>
           </Grid>
           <Box pt={4}>
             <Copyright />

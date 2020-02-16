@@ -183,7 +183,9 @@ export default function Dashboard() {
         <div className={classes.appBarSpacer} />
         <Container maxWidth="lg" className={classes.container}>
           <Grid container spacing={3}>
-          <Title>Red Gym</Title>
+          <Box pr={4} pl={2}>
+            <Title>Red Gym</Title>
+          </Box>
             <RedGym/>
           </Grid>
           <Box pt={4}>

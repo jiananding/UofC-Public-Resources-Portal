@@ -29,7 +29,7 @@ function BusinessLibrary() {
       <Typography component="p" variant="h7">
         Current Number of People:
       </Typography>
-      <Typography component="p" variant="h6">
+      <Typography component="p" variant="h6" id="number">
         0
       </Typography>
       <Typography component="p" variant="h6" color="#F44336">
@@ -51,7 +51,28 @@ function HealthSciencesLibrary() {
   const classes = useStyles();
   return (
     <React.Fragment>
-      <Title>Health Sciences Library</Title>
+      <Title onClick={
+        window.onload = function() {
+          for (let x = 1; x < 99; x++) {
+            setTimeout(() => {
+              let people1 = this.parseInt(document.querySelector("#number1").textContent);
+              if (people1 > 0) {
+                document.querySelector("#number1").textContent = this.Math.random() > 0.5 ? people1+1: people1-1;
+              }
+
+              let people2 = this.parseInt(document.querySelector("#number6").textContent);
+              if (people2 > 0) {
+                document.querySelector("#number6").textContent = this.Math.random() > 0.5 ? people2+2: people2-1;
+              }
+
+              let people3 = this.parseInt(document.querySelector("#number3").textContent);
+              if (people3 > 0) {
+                document.querySelector("#number3").textContent = this.Math.random() > 0.5 ? people3+3: people3-1;
+              }
+            }, 5000*x);
+          }
+        }
+      }>Health Sciences Library</Title>
       <Typography component="p" variant="h7">
         Current Status:
       </Typography>
@@ -61,7 +82,7 @@ function HealthSciencesLibrary() {
       <Typography component="p" variant="h7">
         Current Number of People:
       </Typography>
-      <Typography component="p" variant="h6">
+      <Typography component="p" variant="h6" id="number1">
         52
       </Typography>
       <Typography component="p" variant="h6" color="#F44336">
@@ -93,7 +114,7 @@ function DoucetteLibrary() {
       <Typography component="p" variant="h7">
         Current Number of People:
       </Typography>
-      <Typography component="p" variant="h6">
+      <Typography component="p" variant="h6" id="number2">
         20
       </Typography>
       <Typography component="p" variant="h6" color="#F44336">
@@ -124,7 +145,7 @@ function GallagherLibrary() {
       <Typography component="p" variant="h7">
         Current Number of People:
       </Typography>
-      <Typography component="p" variant="h6">
+      <Typography component="p" variant="h6" id="number3">
         20
       </Typography>
       <Typography component="p" variant="h6" color="#F44336">
@@ -176,7 +197,9 @@ function TaylorFamilyDigitalLibrary() {
   const classes = useStyles();
   return (
     <React.Fragment>
-      <Title>Taylor Family Digital Library</Title>
+      <Title onClick={
+        window.onmousemove
+      }>Taylor Family Digital Library</Title>
       <Typography component="p" variant="h7">
         Current Status:
       </Typography>
@@ -186,7 +209,7 @@ function TaylorFamilyDigitalLibrary() {
       <Typography component="p" variant="h7">
         Current Number of People:
       </Typography>
-      <Typography component="p" variant="h6">
+      <Typography component="p" variant="h6" id="number6">
         125
       </Typography>
       <Typography component="p" variant="h6" color="#F44336">
@@ -208,7 +231,18 @@ function DiningCenter() {
   const classes = useStyles();
   return (
     <React.Fragment>
-      <Title>Dining Centre</Title>
+      <Title onClick={
+        window.onload = function() {
+          for (let x = 1; x < 99; x++) {
+            setTimeout(() => {
+              let people1 = this.parseInt(document.querySelector("#number5").textContent);
+              if (people1 > 0) {
+                document.querySelector("#number5").textContent = this.Math.random() > 0.5 ? people1+2: people1-1;
+              }
+            }, 10000*x);
+          }
+        }
+      }>Dining Centre</Title>
       <Typography component="p" variant="h7">
         Current Status:
       </Typography>
@@ -218,7 +252,7 @@ function DiningCenter() {
       <Typography component="p" variant="h7">
         Current Number of People:
       </Typography>
-      <Typography component="p" variant="h6">
+      <Typography component="p" variant="h6" id="number5">
         40
       </Typography>
       <Typography component="p" variant="h6" color="#F44336">
@@ -240,7 +274,28 @@ function MachallParkade() {
   const classes = useStyles();
   return (
     <React.Fragment>
-      <Title>MacEven Hall Parkade</Title>
+      <Title onClick={
+        window.onload = function() {
+          for (let x = 1; x < 99; x++) {
+            setTimeout(() => {
+              let people1 = this.parseInt(document.querySelector("#number10").textContent);
+              if (people1 > 0) {
+                document.querySelector("#number10").textContent = this.Math.random() > 0.5 ? people1+2: people1-1;
+              }
+
+              people1 = this.parseInt(document.querySelector("#number11").textContent);
+              if (people1 > 0) {
+                document.querySelector("#number11").textContent = this.Math.random() > 0.5 ? people1+2: people1-1;
+              }
+
+              people1 = this.parseInt(document.querySelector("#number22").textContent);
+              if (people1 > 0) {
+                document.querySelector("#number22").textContent = this.Math.random() > 0.5 ? people1+2: people1-1;
+              }
+            }, 10000*x);
+          }
+        }
+      }>MacEven Hall Parkade</Title>
       <Typography component="p" variant="h7">
         Current Status:
       </Typography>
@@ -250,7 +305,7 @@ function MachallParkade() {
       <Typography component="p" variant="h7">
         Available Carslots :
       </Typography>
-      <Typography component="p" variant="h4">
+      <Typography component="p" variant="h4" id="number10">
         173
       </Typography>
       <Typography color="textSecondary" className={classes.depositContext}>
@@ -278,7 +333,7 @@ function ArtParkade() {
       <Typography component="p" variant="h7">
         Available Carslots :
       </Typography>
-      <Typography component="p" variant="h4">
+      <Typography component="p" variant="h4" id="number11">
         112
       </Typography>
       <Typography color="textSecondary" className={classes.depositContext}>
@@ -306,7 +361,7 @@ function Lot11() {
       <Typography component="p" variant="h7">
         Available Carslots :
       </Typography>
-      <Typography component="p" variant="h4">
+      <Typography component="p" variant="h4" id="number22">
         59
       </Typography>
       <Typography color="textSecondary" className={classes.depositContext}>
@@ -474,7 +529,7 @@ function JackSimpsonGym() {
       <Typography component="p" variant="h7">
         Available Basketball Courts :
       </Typography>
-      <Typography component="p" variant="h4">
+      <Typography component="p" variant="h4" id="number">
         4
       </Typography>
       <Typography color="textSecondary" className={classes.depositContext}>

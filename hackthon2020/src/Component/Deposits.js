@@ -236,7 +236,35 @@ function DiningCenter() {
   );
 }
 
-function Parkade() {
+function MachallParkade() {
+  const classes = useStyles();
+  return (
+    <React.Fragment>
+      <Title>MacEven Hall Parkade</Title>
+      <Typography component="p" variant="h7">
+        Current Status:
+      </Typography>
+      <Typography component="p" variant="h5">
+        OPEN
+      </Typography>
+      <Typography component="p" variant="h7">
+        Available Carslots :
+      </Typography>
+      <Typography component="p" variant="h4">
+        173
+      </Typography>
+      <Typography color="textSecondary" className={classes.depositContext}>
+      </Typography>
+      <div>
+        <Link color="primary" href="#" onClick={preventDefault}>
+          Check details
+        </Link>
+      </div>
+    </React.Fragment>
+  );
+}
+
+function ArtParkade() {
   const classes = useStyles();
   return (
     <React.Fragment>
@@ -252,6 +280,34 @@ function Parkade() {
       </Typography>
       <Typography component="p" variant="h4">
         112
+      </Typography>
+      <Typography color="textSecondary" className={classes.depositContext}>
+      </Typography>
+      <div>
+        <Link color="primary" href="#" onClick={preventDefault}>
+          Check details
+        </Link>
+      </div>
+    </React.Fragment>
+  );
+}
+
+function Lot11() {
+  const classes = useStyles();
+  return (
+    <React.Fragment>
+      <Title>Lot 11</Title>
+      <Typography component="p" variant="h7">
+        Current Status:
+      </Typography>
+      <Typography component="p" variant="h5">
+        OPEN
+      </Typography>
+      <Typography component="p" variant="h7">
+        Available Carslots :
+      </Typography>
+      <Typography component="p" variant="h4">
+        59
       </Typography>
       <Typography color="textSecondary" className={classes.depositContext}>
       </Typography>
@@ -404,6 +460,37 @@ function GoldGym() {
   );
 }
 
+function JackSimpsonGym() {
+  const classes = useStyles();
+  return (
+    <React.Fragment>
+      <Title>Jack Simpson Gym</Title>
+      <Typography component="p" variant="h7">
+        Current Status:
+      </Typography>
+      <Typography component="p" variant="h5">
+        OPEN
+      </Typography>
+      <Typography component="p" variant="h7">
+        Available Basketball Courts :
+      </Typography>
+      <Typography component="p" variant="h4">
+        4
+      </Typography>
+      <Typography color="textSecondary" className={classes.depositContext}>
+      </Typography>
+      <div>
+        <Link color="primary" href="#" onClick={preventDefault}>
+          Check details
+        </Link>
+      </div>
+    </React.Fragment>
+  );
+}
+
+
+
 export default BusinessLibrary;
-export {RedGym, GoldGym, DoucetteLibrary, GallagherLibrary, BusinessLibrary, HealthSciencesLibrary, TaylorFamilyDigitalLibrary, DiningCenter, Parkade, Lot10, SwimmingPool, BasketballGym};
-// import {RedGym, GoldGym, DoucetteLibrary, GallagherLibrary, BusinessLibrary, HealthSciencesLibrary, TaylorFamilyDigitalLibrary, DiningCenter, Parkade, Lot10, SwimmingPool, BasketballGym} from "./Deposits";
+export {BennettJonesLawLibrary ,Lot11, JackSimpsonGym, RedGym, GoldGym, DoucetteLibrary, GallagherLibrary, BusinessLibrary, HealthSciencesLibrary, TaylorFamilyDigitalLibrary, DiningCenter, ArtParkade, MachallParkade, Lot10, SwimmingPool, BasketballGym};
+
+// import {BennettJonesLawLibrary ,Lot11, JackSimpsonGym, RedGym, GoldGym, DoucetteLibrary, GallagherLibrary, BusinessLibrary, HealthSciencesLibrary, TaylorFamilyDigitalLibrary, DiningCenter, ArtParkade, MachallParkade, Lot10, SwimmingPool, BasketballGym} from "./Deposits";

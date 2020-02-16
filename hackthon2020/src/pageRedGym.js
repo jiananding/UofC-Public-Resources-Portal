@@ -21,6 +21,7 @@ import NotificationsIcon from "@material-ui/icons/Notifications";
 import { mainListItems, secondaryListItems } from "./Component/listItem"
 import Schedule from "./Component/Schedule";
 import {RedGym, GoldGym, DoucetteLibrary, GallagherLibrary, BusinessLibrary, HealthSciencesLibrary, TaylorFamilyDigitalLibrary, DiningCenter, Parkade, Lot10, SwimmingPool, BasketballGym} from "./Component/Deposits";
+import Title from "./Component/Title";
 
 function Copyright() {
   return (
@@ -183,6 +184,8 @@ export default function Dashboard() {
         <div className={classes.appBarSpacer} />
         <Container maxWidth="lg" className={classes.container}>
           <Grid container spacing={3}>
+          <Title>Red Gym</Title>
+
             <Schedule/>
           </Grid>
           <Box pt={4}>

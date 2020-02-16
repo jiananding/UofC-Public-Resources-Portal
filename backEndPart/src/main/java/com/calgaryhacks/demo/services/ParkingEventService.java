@@ -20,7 +20,7 @@ public class ParkingEventService {
 
         for(int i=0; i<howMany; i++){
             ParkingEvent event = new ParkingEvent();
-            event.setBuildingId(rand.nextInt(3));
+            event.setBuildingId(rand.nextInt(4));
 
             event.setStartTime(new Date());
             event.setEndTime(new Date());

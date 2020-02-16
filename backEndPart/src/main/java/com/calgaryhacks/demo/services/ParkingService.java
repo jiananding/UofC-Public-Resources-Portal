@@ -17,11 +17,22 @@ public class ParkingService {
         parking1.setCapacity(50);
 
         Parking parking2 = new Parking();
-        parking2.setName("Lot 21");
+        parking2.setName("Lot 10");
+        parking2.setCapacity(25);
+
+        Parking parking3 = new Parking();
+        parking2.setName("Lot 11");
+        parking2.setCapacity(25);
+
+        Parking parking4 = new Parking();
+        parking2.setName("MacEven Hall Parkade");
         parking2.setCapacity(25);
 
         parkingRepo.save(parking1);
         parkingRepo.save(parking2);
+        parkingRepo.save(parking3);
+        parkingRepo.save(parking4);
+
     }
 
     public Parking findById(long id){

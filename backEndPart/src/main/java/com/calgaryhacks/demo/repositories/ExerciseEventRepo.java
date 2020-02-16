@@ -7,6 +7,8 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface ExerciseEventRepo extends CrudRepository<ExerciseEvent, Long> {
 
+    ExerciseEvent findById(long id);
+
     @Override
     Iterable<ExerciseEvent> findAll();
 }

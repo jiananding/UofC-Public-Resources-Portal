@@ -21,6 +21,7 @@ function App() {
         <Route exact={true} path="/study" component={pageStudy} />
         <Route exact={true} path="/living" component={pageLiving} />
         <Route exact={true} path="/exercising" component={pageExercising} />
+        <Route exact={true} path="/parking" component={pageParking} />
         <Route exact={true} path="/red_gym" component={pageRedGym} />
         <Route exact={true} path="/gold_gym" component={pageGoldGym} />
         <Route exact={true} path="/jack_simpson_gym" component={pageJackSimpsonGym} />

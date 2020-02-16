@@ -22,6 +22,7 @@ import { mainListItems, secondaryListItems } from "./Component/listItem"
 import Title from "./Component/Title";
 import Chart from "./Component/Chart";
 import Schedule from "./Component/Schedule";
+import Deposits, {BusinessLibrary, HealthSciencesLibrary, TaylorFamilyDigitalLibrary, DiningCenter, Parkade, Lot10, SwimmingPool, BasketballGym} from "./Component/Deposits";
 
 
 function Copyright() {
@@ -193,6 +194,11 @@ export default function Dashboard() {
               </Paper>
             </Grid>
           </Grid>
+          <Grid item xs={12} md={4} lg={3}>
+              <Paper className={fixedHeightPaper}>
+                <BusinessLibrary/>
+              </Paper>
+            </Grid> 
           <Box pt={4}>
             <Copyright />
           </Box>

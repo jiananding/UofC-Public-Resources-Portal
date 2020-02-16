@@ -14,7 +14,7 @@ public class ExerciseController {
     @Autowired
     private ExerciseService exerciseService;
 
-    @PostMapping("",)
+    @PostMapping("")
     public void create(){
         exerciseService.createFakeData();
     }

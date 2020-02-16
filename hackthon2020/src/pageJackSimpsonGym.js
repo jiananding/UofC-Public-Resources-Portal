@@ -189,12 +189,13 @@ export default function Dashboard() {
           </Grid>
 
             {/* Chart */}
+            <Box pt ={4}>
             <Grid item xs={12} md={12} lg={12}>
               <Paper className={fixedHeightPaper}>
                 <Exercise/>
               </Paper>
             </Grid>
-          
+            </Box>
           <Box pt={4}>
             <Copyright />
           </Box>

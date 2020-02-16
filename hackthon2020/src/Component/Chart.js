@@ -66,7 +66,7 @@ const data2 = [
   createData("20:00", 160),
   createData("21:00", 160),
   createData("22:00", 140),
-  createData("23:00", 80)
+  createData("23:00", 20)
 ];
 
 

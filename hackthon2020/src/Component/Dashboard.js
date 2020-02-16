@@ -155,12 +155,12 @@ export default function Dashboard() {
             noWrap
             className={classes.title}
           >
-            Dashboard
+            UofC Public Resources Portal
           </Typography>
           <IconButton color="inherit">
-            <Badge badgeContent={4} color="secondary">
+            {/* <Badge badgeContent={4000} color="secondary">
               <NotificationsIcon />
-            </Badge>
+            </Badge> */}
           </IconButton>
         </Toolbar>
       </AppBar>
@@ -183,12 +183,6 @@ export default function Dashboard() {
         <div className={classes.appBarSpacer} />
         <Container maxWidth="lg" className={classes.container}>
           <Grid container spacing={3}>
-            {/* Chart */}
-            <Grid item xs={12} md={12} lg={12}>
-              <Paper className={fixedHeightPaper}>
-                <Chart />
-              </Paper>
-            </Grid>
             {/* Recent Deposits */}
             {/* <Grid item xs={12} md={4} lg={3}>
               <Paper className={fixedHeightPaper}>

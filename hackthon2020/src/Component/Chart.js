@@ -70,6 +70,56 @@ const data2 = [
 ];
 
 
+const data = [
+  createData("1st year(semester1)", 3.8),
+  createData("1st year(semester2)", 3.2),
+  createData("2nd year(semester1)", 2.3),
+  createData("2nd year(semester2)", 2.4),
+  createData("3rd year(semester1)", 2.8),
+  createData("3rd year(semester2)", 3.3),
+  createData("4th year(semester1)", undefined),
+  createData("4th year(semester2)", undefined),
+];
+
+function Db() {
+  const theme = useTheme();
+
+  return (
+    <React.Fragment>
+      <Title>University life</Title>
+      <ResponsiveContainer>
+        <LineChart
+          data={data}
+          margin={{
+            top: 16,
+            right: 16,
+            bottom: 0,
+            left: 26
+          }}
+        >
+          <XAxis dataKey="time" stroke={theme.palette.text.secondary} />
+          <YAxis stroke={theme.palette.text.secondary}>
+            <Label
+              angle={270}
+              position="left"
+              style={{ textAnchor: "middle", fill: theme.palette.text.primary }}
+            >
+              People
+            </Label>
+          </YAxis>
+          <Line
+            type="monotone"
+            dataKey="amount"
+            stroke={theme.palette.primary.main}
+            dot={false}
+          />
+        </LineChart>
+      </ResponsiveContainer>
+    </React.Fragment>
+  );
+}
+
+
  function Red() {
   const theme = useTheme();
 
@@ -184,7 +234,7 @@ function Living() {
   );
 }
 
-export default Exercise;
+export default Db;
 export {Red, Living, Exercise};
 
 //import {Park, Study, Living, Exercise} from "./Component/Chart";

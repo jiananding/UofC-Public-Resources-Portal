@@ -9,6 +9,8 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface LivingEventRepo extends CrudRepository<LivingEvent, Long> {
 
+    LivingEvent findById(long id);
+
     @Override
     Iterable<LivingEvent> findAll();
 }

@@ -8,13 +8,13 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/exercise")
-@CrossOrigin
+@CrossOrigin(origins = "*")
 public class ExerciseController {
 
     @Autowired
     private ExerciseService exerciseService;
 
-    @PostMapping("")
+    @PostMapping("",)
     public void create(){
         exerciseService.createFakeData();
     }

@@ -23,6 +23,11 @@ import Chart from "./Chart";
 import Deposits from "./Deposits";
 import Orders from "./Orders";
 
+
+// **************************
+import {getCertainExercise} from "../actions/Exercise/exerciseActions";
+import PropTypes from "prop-types";
+
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
@@ -118,6 +123,9 @@ const useStyles = makeStyles(theme => ({
 }));
 
 export default function Dashboard() {
+
+  const exercise = getCertainExercise();
+  
   const classes = useStyles();
   const [open, setOpen] = React.useState(true);
   const handleDrawerOpen = () => {

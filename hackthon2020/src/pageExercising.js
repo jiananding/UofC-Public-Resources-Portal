@@ -19,7 +19,6 @@ import MenuIcon from "@material-ui/icons/Menu";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import { mainListItems, secondaryListItems } from "./Component/listItem"
-import './pageExercising.css';
 import Title from "./Component/Title";
 import Chart from "./Component/Chart";
 import Schedule from "./Component/Schedule";

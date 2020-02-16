@@ -20,7 +20,7 @@ import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import { mainListItems, secondaryListItems } from "./listItem"
 import Chart from "./Chart";
-import Deposits, {BusinessLibrary, HealthSciencesLibrary, TaylorFamilyDigitalLibrary, DiningCenter, Parkade, Lot10, SwimmingPool, BasketballGym} from "./Deposits";
+import {RedGym, GoldGym, DoucetteLibrary, GallagherLibrary, BusinessLibrary, HealthSciencesLibrary, TaylorFamilyDigitalLibrary, DiningCenter, Parkade, Lot10, SwimmingPool, BasketballGym} from "./Deposits";
 import Orders from "./Orders";
 
 function Copyright() {

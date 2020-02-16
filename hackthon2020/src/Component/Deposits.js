@@ -79,6 +79,99 @@ function HealthSciencesLibrary() {
   );
 }
 
+function DoucetteLibrary() {
+  const classes = useStyles();
+  return (
+    <React.Fragment>
+      <Title>Doucette Library</Title>
+      <Typography component="p" variant="h7">
+        Current Status:
+      </Typography>
+      <Typography component="p" variant="h5">
+        OPEN
+      </Typography>
+      <Typography component="p" variant="h7">
+        Current Number of People:
+      </Typography>
+      <Typography component="p" variant="h4">
+        20
+      </Typography>
+      <Typography component="p" variant="h6" color="#F44336">
+        Flow Rate: Middle {/*Should be green here! */}
+      </Typography>
+      <Typography color="textSecondary" className={classes.depositContext}>
+      </Typography>
+      <div>
+        <Link color="primary" href="#" onClick={preventDefault}>
+          Check details
+        </Link>
+      </div>
+    </React.Fragment>
+  );
+}
+
+function GallagherLibrary() {
+  const classes = useStyles();
+  return (
+    <React.Fragment>
+      <Title>Gallagher Library</Title>
+      <Typography component="p" variant="h7">
+        Current Status:
+      </Typography>
+      <Typography component="p" variant="h5">
+        OPEN
+      </Typography>
+      <Typography component="p" variant="h7">
+        Current Number of People:
+      </Typography>
+      <Typography component="p" variant="h4">
+        20
+      </Typography>
+      <Typography component="p" variant="h6" color="#F44336">
+        Flow Rate: Middle {/*Should be green here! */}
+      </Typography>
+      <Typography color="textSecondary" className={classes.depositContext}>
+      </Typography>
+      <div>
+        <Link color="primary" href="#" onClick={preventDefault}>
+          Check details
+        </Link>
+      </div>
+    </React.Fragment>
+  );
+}
+
+function BennettJonesLawLibrary() {
+  const classes = useStyles();
+  return (
+    <React.Fragment>
+      <Title>Bennett Jones Law Library</Title>
+      <Typography component="p" variant="h7">
+        Current Status:
+      </Typography>
+      <Typography component="p" variant="h5">
+        OPEN
+      </Typography>
+      <Typography component="p" variant="h7">
+        Current Number of People:
+      </Typography>
+      <Typography component="p" variant="h4">
+        14
+      </Typography>
+      <Typography component="p" variant="h6" color="#F44336">
+        Flow Rate: Low {/*Should be green here! */}
+      </Typography>
+      <Typography color="textSecondary" className={classes.depositContext}>
+      </Typography>
+      <div>
+        <Link color="primary" href="#" onClick={preventDefault}>
+          Check details
+        </Link>
+      </div>
+    </React.Fragment>
+  );
+}
+
 function TaylorFamilyDigitalLibrary() {
   const classes = useStyles();
   return (
@@ -255,5 +348,62 @@ function BasketballGym() {
   );
 }
 
+function RedGym() {
+  const classes = useStyles();
+  return (
+    <React.Fragment>
+      <Title>Red Gym</Title>
+      <Typography component="p" variant="h7">
+        Current Status:
+      </Typography>
+      <Typography component="p" variant="h5">
+        OPEN
+      </Typography>
+      <Typography component="p" variant="h7">
+        Available Basketball Courts :
+      </Typography>
+      <Typography component="p" variant="h4">
+        3
+      </Typography>
+      <Typography color="textSecondary" className={classes.depositContext}>
+      </Typography>
+      <div>
+        <Link color="primary" href="#" onClick={preventDefault}>
+          Check details
+        </Link>
+      </div>
+    </React.Fragment>
+  );
+}
+
+function GoldGym() {
+  const classes = useStyles();
+  return (
+    <React.Fragment>
+      <Title>Gold Gym</Title>
+      <Typography component="p" variant="h7">
+        Current Status:
+      </Typography>
+      <Typography component="p" variant="h5">
+        OPEN
+      </Typography>
+      <Typography component="p" variant="h7">
+        Available Basketball Courts :
+      </Typography>
+      <Typography component="p" variant="h4">
+        0
+      </Typography>
+      <Typography color="textSecondary" className={classes.depositContext}>
+      </Typography>
+      <div>
+        <Link color="primary" href="#" onClick={preventDefault}>
+          Check details
+        </Link>
+      </div>
+    </React.Fragment>
+  );
+}
+
 export default BusinessLibrary;
-export {BusinessLibrary, HealthSciencesLibrary, TaylorFamilyDigitalLibrary, DiningCenter, Parkade, Lot10, SwimmingPool, BasketballGym};
+export {RedGym, GoldGym, DoucetteLibrary, GallagherLibrary, BusinessLibrary, HealthSciencesLibrary, TaylorFamilyDigitalLibrary, DiningCenter, Parkade, Lot10, SwimmingPool, BasketballGym};
+// import {RedGym, GoldGym, DoucetteLibrary, GallagherLibrary, BusinessLibrary, HealthSciencesLibrary, TaylorFamilyDigitalLibrary, DiningCenter, Parkade, Lot10, SwimmingPool, BasketballGym} from "./Deposits";

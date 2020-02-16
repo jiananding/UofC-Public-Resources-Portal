@@ -1,9 +1,11 @@
 package com.calgaryhacks.demo.domain;
 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+@Entity
 public class Living {
 
     public Living(){
@@ -12,7 +14,7 @@ public class Living {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private long Id;
 
     private String name;
 
@@ -20,11 +22,11 @@ public class Living {
 
 
     public long getId() {
-        return id;
+        return Id;
     }
 
-    public void setId(long id) {
-        this.id = id;
+    public void setId(long Id) {
+        this.Id = Id;
     }
 
     public String getName() {

@@ -368,7 +368,7 @@ function SwimmingPool() {
       <Typography color="textSecondary" className={classes.depositContext}>
       </Typography>
       <div>
-        <Link color="primary" href="#" onClick={preventDefault}>
+        <Link color="primary" href="/swimming_pool">
           Check details
         </Link>
       </div>
@@ -424,7 +424,7 @@ function RedGym() {
       <Typography color="textSecondary" className={classes.depositContext}>
       </Typography>
       <div>
-        <Link color="primary" href="#" onClick={preventDefault}>
+        <Link color="primary" href="/red_gym">
           Check details
         </Link>
       </div>
@@ -452,7 +452,7 @@ function GoldGym() {
       <Typography color="textSecondary" className={classes.depositContext}>
       </Typography>
       <div>
-        <Link color="primary" href="#" onClick={preventDefault}>
+        <Link color="primary" href="/gold_gym">
           Check details
         </Link>
       </div>
@@ -480,7 +480,7 @@ function JackSimpsonGym() {
       <Typography color="textSecondary" className={classes.depositContext}>
       </Typography>
       <div>
-        <Link color="primary" href="#" onClick={preventDefault}>
+        <Link color="primary" href="/jack_simpson_gym">
           Check details
         </Link>
       </div>

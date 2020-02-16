@@ -18,6 +18,7 @@ function App() {
         <Route exact={true} path="/study" component={pageStudy} />
         <Route exact={true} path="/living" component={pageLiving} />
         <Route exact={true} path="/exercising" component={pageExercising} />
+        <Route exact={true} path="/parking" component={pageParking} />
         <Route exact={true} path="/red_gym" component={pageRedGym} />
         <Route exact path="/" component={Dashboard} />
       </div>

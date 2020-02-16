@@ -19,8 +19,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import { mainListItems, secondaryListItems } from "./Component/listItem"
-// import Schedule from "./Component/Schedule";
-import {RedGym, GoldGym, DoucetteLibrary, GallagherLibrary, BusinessLibrary, HealthSciencesLibrary, TaylorFamilyDigitalLibrary, DiningCenter, Parkade, Lot10, SwimmingPool, BasketballGym} from "./Component/Deposits";
+import {BennettJonesLawLibrary ,Lot11, JackSimpsonGym, RedGym, GoldGym, DoucetteLibrary, GallagherLibrary, BusinessLibrary, HealthSciencesLibrary, TaylorFamilyDigitalLibrary, DiningCenter, ArtParkade, MachallParkade, Lot10, SwimmingPool, BasketballGym} from "./Component/Deposits";
 
 function Copyright() {
   return (
@@ -192,6 +191,18 @@ export default function Dashboard() {
           <Grid item xs={12} md={12} lg={3}>
                 <Paper className={fixedHeightPaper}>
                   <GoldGym/>
+                </Paper>
+            </Grid>
+
+            <Grid item xs={12} md={12} lg={3}>
+                <Paper className={fixedHeightPaper}>
+                  <JackSimpsonGym/>
+                </Paper>
+            </Grid>
+
+            <Grid item xs={12} md={12} lg={3}>
+                <Paper className={fixedHeightPaper}>
+                  <BasketballGym/>
                 </Paper>
             </Grid>
 

@@ -7,7 +7,6 @@ import PeopleIcon from "@material-ui/icons/People";
 import FastFood from "@material-ui/icons/Fastfood";
 import Sport_BasketBall from "@material-ui/icons/SportsBasketball";
 import Local_Parking from "@material-ui/icons/LocalParking";
-import {Redirect} from "react-router-dom"
 
 const toDashboard = () => {
   window.location.href = "./dashboard";

@@ -17,15 +17,49 @@ class App extends Component{
       exercises: null,
       livings: null,
       studies: null,
-      parkings: null
+      parkings: null,
+      exerciseEvents: null,
+      livingEvents: null,
+      studyEvents: null,
+      parkingEvent: null
     };
   }
 
   componentDidMount = async () =>{
-    const url = "http://localhost:8080/exercise/all";
-    const res = await axios.get(url);
-    this.setState({ exercises : res});
-    console.log(this.state.exercises)
+    let url = "http://localhost:8080/exercise/all";
+    let res = await axios.get(url);
+    this.setState({ exercises: res });
+
+    window.exercises = this.state.exercises;
+
+    // url = "http://localhost:8080/living/all";
+    // res = await axios.get(url);
+    // this.setState({ livings: res });
+
+    // url = "http://localhost:8080/study/all";
+    // res = await axios.get(url);
+    // this.setState({ studies: res });
+
+    // url = "http://localhost:8080/parking/all";
+    // res = await axios.get(url);
+    // this.setState({ parkings: res });
+
+    // url = "http://localhost:8080/exerciseEvent/all";
+    // res = await axios.get(url);
+    // this.setState({ exercises: res });
+
+    // url = "http://localhost:8080/exercise/all";
+    // res = await axios.get(url);
+    // this.setState({ exercises: res });
+
+    // url = "http://localhost:8080/exercise/all";
+    // res = await axios.get(url);
+    // this.setState({ exercises: res });
+
+    // url = "http://localhost:8080/exercise/all";
+    // res = await axios.get(url);
+    // this.setState({ exercises: res });
+    
   }
 
   render(){

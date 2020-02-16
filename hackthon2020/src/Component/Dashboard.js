@@ -1,4 +1,4 @@
-import React from "react";
+import React, {Component} from "react";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
@@ -22,11 +22,6 @@ import {mainListItems} from "./listItem"
 import Chart from "./Chart";
 import Deposits from "./Deposits";
 import Orders from "./Orders";
-
-
-// **************************
-import {getCertainExercise} from "../actions/Exercise/exerciseActions";
-import PropTypes from "prop-types";
 
 function Copyright() {
   return (
@@ -122,10 +117,9 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function Dashboard() {
 
-  const exercise = getCertainExercise();
-  
+export default function Dashboard(props) {
+
   const classes = useStyles();
   const [open, setOpen] = React.useState(true);
   const handleDrawerOpen = () => {
@@ -135,7 +129,7 @@ export default function Dashboard() {
     setOpen(false);
   };
   const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
-
+  
   return (
     <div className={classes.root}>
       <CssBaseline />
@@ -164,6 +158,7 @@ export default function Dashboard() {
             className={classes.title}
           >
             Dashboard
+            
           </Typography>
           <IconButton color="inherit">
             <Badge badgeContent={4} color="secondary">

@@ -16,33 +16,57 @@ function createData(id, time_period, event, status) {
 const rows = [
   createData(
     0,
-    "16 Mar, 2019",
-    "Elvis Presley",
-    "Tupelo, MS",
+    "16 Feb, 2020",
+    "Hackathon",
+    "ICT102, On Campus",
   ),
   createData(
     1,
-    "16 Mar, 2019",
-    "Paul McCartney",
-    "London, UK",
+    "17 Feb, 2020",
+    "Family Day Canada",
+    "Public Holidays",
   ),
   createData(
     2,
-    "16 Mar, 2019",
-    "Tom Scholz",
-    "Boston, MA",
+    "25 Feb, 2020",
+    "Managing Risk in Projects",
+    "Univeristy of Calgary, Calgary",
   ),
   createData(
     3,
-    "16 Mar, 2019",
-    "Michael Jackson",
-    "Gary, IN",
+    "29 Feb, 2020",
+    "Student Leadership Conference",
+    "Univeristy of Calgary, Calgary",
   ),
   createData(
     4,
-    "15 Mar, 2019",
-    "Bruce Springsteen",
-    "Long Branch, NJ",
+    "10 Apr, 2020",
+    "Good Friday",
+    "Public Holiday",
+  ),
+  createData(
+    5,
+    "13 Apr, 2020",
+    "Easter Monday",
+    "Public Hoilday",
+  ),
+  createData(
+    6,
+    "18 May, 2020",
+    "Victoria Day",
+    "Public Hoilday",
+  ),
+  createData(
+    7,
+    "1 Jul, 2020",
+    "Canada Day",
+    "Public Hoilday",
+  ),
+  createData(
+    8,
+    "12 Oct, 2020",
+    "Thanksgiving",
+    "Public Hoilday",
   )
 ];
 
@@ -60,13 +84,13 @@ export default function Orders() {
   const classes = useStyles();
   return (
     <React.Fragment>
-      <Title>Recent Orders</Title>
+      <Title>Upcoming event</Title>
       <Table size="small">
         <TableHead>
           <TableRow>
             <TableCell>Time period</TableCell>
             <TableCell>Event</TableCell>
-            <TableCell>Status</TableCell>
+            <TableCell>Note</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -80,9 +104,6 @@ export default function Orders() {
         </TableBody>
       </Table>
       <div className={classes.seeMore}>
-        <Link color="primary" href="#" onClick={preventDefault}>
-          See more orders
-        </Link>
       </div>
     </React.Fragment>
   );

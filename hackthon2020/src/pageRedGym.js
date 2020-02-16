@@ -21,6 +21,7 @@ import NotificationsIcon from "@material-ui/icons/Notifications";
 import { mainListItems, secondaryListItems } from "./Component/listItem"
 import {RedGym} from "./Component/Schedule";
 import Title from "./Component/Title";
+import {Red, Living, Exercise} from "./Component/Chart";
 
 function Copyright() {
   return (
@@ -188,6 +189,16 @@ export default function Dashboard() {
           </Box>
             <RedGym/>
           </Grid>
+
+         {/* Chart */}
+         <Box pt ={4}>
+         <Grid item xs={12} md={12} lg={12}>
+            <Paper className={fixedHeightPaper}>
+              <Red/>
+            </Paper>
+          </Grid>
+          </Box>
+        
           <Box pt={4}>
             <Copyright />
           </Box>

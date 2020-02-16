@@ -38,11 +38,6 @@ function BusinessLibrary() {
       
       <Typography color="textSecondary" className={classes.depositContext}>
       </Typography>
-      <div>
-        <Link color="primary" href="#" onClick={preventDefault}>
-          Check details
-        </Link>
-      </div>
     </React.Fragment>
   );
 }
@@ -91,11 +86,6 @@ function HealthSciencesLibrary() {
       
       <Typography color="textSecondary" className={classes.depositContext}>
       </Typography>
-      <div>
-        <Link color="primary" href="#" onClick={preventDefault}>
-          Check details
-        </Link>
-      </div>
     </React.Fragment>
   );
 }
@@ -122,11 +112,6 @@ function DoucetteLibrary() {
       </Typography>
       <Typography color="textSecondary" className={classes.depositContext}>
       </Typography>
-      <div>
-        <Link color="primary" href="#" onClick={preventDefault}>
-          Check details
-        </Link>
-      </div>
     </React.Fragment>
   );
 }
@@ -153,11 +138,6 @@ function GallagherLibrary() {
       </Typography>
       <Typography color="textSecondary" className={classes.depositContext}>
       </Typography>
-      <div>
-        <Link color="primary" href="#" onClick={preventDefault}>
-          Check details
-        </Link>
-      </div>
     </React.Fragment>
   );
 }
@@ -184,11 +164,6 @@ function BennettJonesLawLibrary() {
       </Typography>
       <Typography color="textSecondary" className={classes.depositContext}>
       </Typography>
-      <div>
-        <Link color="primary" href="#" onClick={preventDefault}>
-          Check details
-        </Link>
-      </div>
     </React.Fragment>
   );
 }
@@ -218,11 +193,6 @@ function TaylorFamilyDigitalLibrary() {
       
       <Typography color="textSecondary" className={classes.depositContext}>
       </Typography>
-      <div>
-        <Link color="primary" href="#" onClick={preventDefault}>
-          Check details
-        </Link>
-      </div>
     </React.Fragment>
   );
 }
@@ -261,11 +231,6 @@ function DiningCenter() {
       
       <Typography color="textSecondary" className={classes.depositContext}>
       </Typography>
-      <div>
-        <Link color="primary" href="#" onClick={preventDefault}>
-          Check details
-        </Link>
-      </div>
     </React.Fragment>
   );
 }

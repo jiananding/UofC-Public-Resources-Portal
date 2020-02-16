@@ -22,6 +22,7 @@ import { mainListItems, secondaryListItems } from "./Component/listItem"
 import Schedule from "./Component/Schedule";
 import {RedGym, GoldGym, DoucetteLibrary, GallagherLibrary, BusinessLibrary, HealthSciencesLibrary, TaylorFamilyDigitalLibrary, DiningCenter, Parkade, Lot10, SwimmingPool, BasketballGym} from "./Component/Deposits";
 import Title from "./Component/Title";
+import {Park, Study, Living, Exercise} from "./Component/Chart";
 
 function Copyright() {
   return (
@@ -187,6 +188,7 @@ export default function Dashboard() {
           <Title>SwimmingPool</Title>
             <Schedule/>
           </Grid>
+          
           <Box pt={4}>
             <Copyright />
           </Box>

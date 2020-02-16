@@ -93,7 +93,7 @@ function DoucetteLibrary() {
       <Typography component="p" variant="h7">
         Current Number of People:
       </Typography>
-      <Typography component="p" variant="h4">
+      <Typography component="p" variant="h6">
         20
       </Typography>
       <Typography component="p" variant="h6" color="#F44336">
@@ -124,7 +124,7 @@ function GallagherLibrary() {
       <Typography component="p" variant="h7">
         Current Number of People:
       </Typography>
-      <Typography component="p" variant="h4">
+      <Typography component="p" variant="h6">
         20
       </Typography>
       <Typography component="p" variant="h6" color="#F44336">
@@ -155,7 +155,7 @@ function BennettJonesLawLibrary() {
       <Typography component="p" variant="h7">
         Current Number of People:
       </Typography>
-      <Typography component="p" variant="h4">
+      <Typography component="p" variant="h6">
         14
       </Typography>
       <Typography component="p" variant="h6" color="#F44336">
@@ -487,8 +487,6 @@ function JackSimpsonGym() {
     </React.Fragment>
   );
 }
-
-
 
 export default BusinessLibrary;
 export {BennettJonesLawLibrary ,Lot11, JackSimpsonGym, RedGym, GoldGym, DoucetteLibrary, GallagherLibrary, BusinessLibrary, HealthSciencesLibrary, TaylorFamilyDigitalLibrary, DiningCenter, ArtParkade, MachallParkade, Lot10, SwimmingPool, BasketballGym};

@@ -255,4 +255,4 @@ function BasketballGym() {
   );
 }
 
-export default BasketballGym;
+export default {BusinessLibrary, HealthSciencesLibrary, TaylorFamilyDigitalLibrary, DiningCenter, Parkade, Lot10, SwimmingPool, BasketballGym};
